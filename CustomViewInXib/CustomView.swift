@@ -15,7 +15,7 @@ class CustomView: UIView{
     
     @IBOutlet weak var textView: UITextView!
     @IBAction func didPressButton(_ sender: UIButton) {
-         textView.text = textField.text
+        textView.text = textField.text
     }
     
 }
