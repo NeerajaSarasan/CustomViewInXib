@@ -13,6 +13,8 @@
 		A6F463192AAAE77E00DD317C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6F463172AAAE77E00DD317C /* Main.storyboard */; };
 		A6F4631B2AAAE77F00DD317C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6F4631A2AAAE77F00DD317C /* Assets.xcassets */; };
 		A6F4631E2AAAE77F00DD317C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6F4631C2AAAE77F00DD317C /* LaunchScreen.storyboard */; };
+		A6F463522AAB12F300DD317C /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F463512AAB12F300DD317C /* CustomView.swift */; };
+		A6F463542AAB148200DD317C /* CustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6F463532AAB148200DD317C /* CustomView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		A6F4631A2AAAE77F00DD317C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A6F4631D2AAAE77F00DD317C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A6F4631F2AAAE77F00DD317C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6F463512AAB12F300DD317C /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		A6F463532AAB148200DD317C /* CustomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				A6F4631A2AAAE77F00DD317C /* Assets.xcassets */,
 				A6F4631C2AAAE77F00DD317C /* LaunchScreen.storyboard */,
 				A6F4631F2AAAE77F00DD317C /* Info.plist */,
+				A6F463512AAB12F300DD317C /* CustomView.swift */,
+				A6F463532AAB148200DD317C /* CustomView.xib */,
 			);
 			path = CustomViewInXib;
 			sourceTree = "<group>";
@@ -126,6 +132,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6F4631E2AAAE77F00DD317C /* LaunchScreen.storyboard in Resources */,
+				A6F463542AAB148200DD317C /* CustomView.xib in Resources */,
 				A6F4631B2AAAE77F00DD317C /* Assets.xcassets in Resources */,
 				A6F463192AAAE77E00DD317C /* Main.storyboard in Resources */,
 			);
@@ -139,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6F463162AAAE77E00DD317C /* ViewController.swift in Sources */,
+				A6F463522AAB12F300DD317C /* CustomView.swift in Sources */,
 				A6F463122AAAE77E00DD317C /* AppDelegate.swift in Sources */,
 				A6F463142AAAE77E00DD317C /* SceneDelegate.swift in Sources */,
 			);

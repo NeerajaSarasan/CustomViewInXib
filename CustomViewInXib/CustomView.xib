@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CustomView" customModule="CustomViewInXib" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="345" height="580"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jVJ-ej-10f" customClass="CustomView" customModule="CustomViewInXib" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="16" width="345" height="530"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="beF-lH-Z32">
+                            <rect key="frame" x="16" y="64" width="313" height="34"/>
+                            <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Welcome....." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="AlE-7S-lcT">
+                            <rect key="frame" x="16" y="170" width="313" height="238"/>
+                            <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                            <color key="textColor" systemColor="labelColor"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences" spellCheckingType="yes" keyboardAppearance="alert" enablesReturnKeyAutomatically="YES"/>
+                        </textView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qmz-04-dvu">
+                            <rect key="frame" x="16" y="424" width="313" height="42"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Hiiii">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="didPressButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="SX4-2i-rM9"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemGray2Color"/>
+                    <constraints>
+                        <constraint firstItem="beF-lH-Z32" firstAttribute="top" secondItem="jVJ-ej-10f" secondAttribute="top" constant="64" id="3Nv-hv-K7f"/>
+                        <constraint firstAttribute="bottom" secondItem="Qmz-04-dvu" secondAttribute="bottom" constant="64" id="412-SR-HrO"/>
+                        <constraint firstAttribute="trailing" secondItem="AlE-7S-lcT" secondAttribute="trailing" constant="16" id="4T6-Mk-kt2"/>
+                        <constraint firstItem="Qmz-04-dvu" firstAttribute="top" secondItem="AlE-7S-lcT" secondAttribute="bottom" constant="16" id="6D5-Io-EQ4"/>
+                        <constraint firstItem="AlE-7S-lcT" firstAttribute="top" secondItem="beF-lH-Z32" secondAttribute="bottom" constant="72" id="B8F-c3-qNq"/>
+                        <constraint firstItem="Qmz-04-dvu" firstAttribute="leading" secondItem="jVJ-ej-10f" secondAttribute="leading" constant="16" id="Yeb-UX-2fW"/>
+                        <constraint firstItem="AlE-7S-lcT" firstAttribute="leading" secondItem="jVJ-ej-10f" secondAttribute="leading" constant="16" id="es2-29-eAX"/>
+                        <constraint firstAttribute="trailing" secondItem="Qmz-04-dvu" secondAttribute="trailing" constant="16" id="f9l-zH-cXR"/>
+                        <constraint firstAttribute="trailing" secondItem="beF-lH-Z32" secondAttribute="trailing" constant="16" id="jtp-7I-TzY"/>
+                        <constraint firstItem="beF-lH-Z32" firstAttribute="leading" secondItem="jVJ-ej-10f" secondAttribute="leading" constant="16" id="yti-Uw-UQJ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="jVJ-ej-10f" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="B5H-Gd-PLN"/>
+                <constraint firstItem="jVJ-ej-10f" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="I9x-8w-Mez"/>
+                <constraint firstItem="jVJ-ej-10f" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="kWT-h9-d6P"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="jVJ-ej-10f" secondAttribute="trailing" id="uAH-9l-06l"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="View" destination="jVJ-ej-10f" id="bi8-VK-c0h"/>
+                <outlet property="textField" destination="beF-lH-Z32" id="RZj-PT-OYY"/>
+                <outlet property="textView" destination="AlE-7S-lcT" id="kiQ-Xw-uTF"/>
+            </connections>
+            <point key="canvasLocation" x="-107.63358778625954" y="-200.70422535211267"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
